@@ -10,22 +10,29 @@
         
         const url = 'cdn/stories/?starts_with=paintings/&sort_by=first_published_at:asc';
         const res = await client.get(url)
+        const res2 = await client.get('cdn/stories/?starts_with=sesje/&sort_by=first_published_at:asc')
         //console.log(res.data.story);
 
-		if (res.data.stories) {
+		if (res.data.stories && res.data.stories) {
             //console.log(res.data.stories[0]['content']['image']);
 			return {
 				props: {
-					paintings: await res.data.stories
+					paintings: await res.data.stories,
+                    photoshoots: await res2.data.stories
 				}
 			};
 		}
+
+
+        
 
 		return {
 			status: res.status,
 			error: new Error(`Could not load ${url}`)
 		};
 	}
+
+    
 </script>
 
 <script>
@@ -33,7 +40,11 @@
     import Nav from "../components/Nav.svelte";
     import Grid from "../components/Grid.svelte";
     import About from "../components/About.svelte";
+    import List from "../components/List.svelte";
+    import Contact from "../components/Contact.svelte";
+
     export let paintings;
+    export let photoshoots;
 </script>
 
 
@@ -45,6 +56,8 @@
     <Grid {paintings}>
     </Grid>
     <About/>
+    <List {photoshoots}/>
+    <Contact/>
 </div>
 
 

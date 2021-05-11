@@ -1,6 +1,9 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
+    import { Remarkable } from 'remarkable';
+    
+	let md = new Remarkable({linkTarget: "_blank"});
 	export let painting;
 
 	const dispatch = createEventDispatcher();
@@ -57,7 +60,7 @@
                      alt="">
                 <div  class="text-gray-50 text-cente mt-6">
                     <h2 class="text-4xl  font-title font-black mb-2">{painting.content.Title_ENG}</h2>
-                    <p x-html="md.render(painting.content.Description_ENG)">{painting.content.Description_ENG}</p>
+                    <p>{@html md.render(painting.content.Description_ENG)}</p>
                 </div>
             </div>
         </div>

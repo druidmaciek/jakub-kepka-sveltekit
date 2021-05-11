@@ -43,7 +43,7 @@
 	<div class="mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0">
 		<div class="flex justify-center">
 			<div>
-				<h1 class="uppercase text-9xl font-black text-center tracking-tight">Jakub Kępka</h1>
+				<h1 class="uppercase cursor-default text-9xl font-black text-center tracking-tight">Jakub Kępka</h1>
 				<div class="mt-4 text-center">
 					<a href="#nav" class="group outline-none">
 						<p class="uppercase font-semibold text-3xl group-hover:text-gray-200">Skip</p>

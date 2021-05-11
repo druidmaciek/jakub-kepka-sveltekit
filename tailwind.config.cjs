@@ -26,7 +26,24 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'title': ['Bebas Neue', 'Montserrat', defaultTheme.fontFamily.sans],
-			}
+			},
+			typography: (theme) => ({
+				DEFAULT: {
+				  css: {
+					color: theme('colors.gray.50'),
+					a: {
+					  color: theme('colors.gray.50'),
+					  '&:hover': {
+						color: theme('colors.gray.300'),
+					  },
+					},
+					h2: {
+					  color: theme('colors.gray.50'),
+					},
+				  },
+				},
+			  })
+			
 		},
 	},
 	variants: {
@@ -34,5 +51,6 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/typography'),
 	],
 };

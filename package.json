@@ -27,7 +27,9 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
     "axios": "^0.21.1",
+    "remarkable": "^2.0.1",
     "storyblok-js-client": "^4.0.9"
   }
 }

@@ -1,3 +1,4 @@
+
 <script>
     import { fly } from 'svelte/transition';
     import Painting from "../components/Painting.svelte";

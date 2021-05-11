@@ -9,7 +9,7 @@
 
 <div id="nav" class="px-2 sm:px-0 flex justify-between items-center text-gray-50 uppercase">
     
-    <span class="text-4xl font-black tracking-tight font-title">Jakub Kępka</span>
+    <span class="text-4xl cursor-default font-black tracking-tight font-title">Jakub Kępka</span>
 
     <div class="flex justify-start items-center space-x-2 font-semibold">
         <a class="p-1 hidden sm:block" href="#about">About</a>
@@ -17,7 +17,7 @@
         <a class="p-1 hidden sm:block" href="#photos">Photoshoots</a>
         <a class="p-1 hidden sm:block" href="#contact">Contact</a>
 
-        <button on:click="{handleClick}" class="block sm:hidden p-1 bg-white hover:bg-gray-100 rounded">
+        <button on:click="{handleClick}" class="block sm:hidden p-1 bg-gray-50 hover:bg-gray-300 rounded">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-900 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
