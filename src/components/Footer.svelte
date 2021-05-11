@@ -11,4 +11,9 @@
         <a href="#photos">Photoshoots</a>
         <a href="#contact">Contact</a>
     </div>
+
+    <div>
+        <a href="https://janowski.dev">Made by: Janowski.dev</a>
+    </div>
+
 </div>
