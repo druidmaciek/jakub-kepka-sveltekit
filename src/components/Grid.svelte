@@ -52,9 +52,9 @@
 <div>
 
 
-<div class="relative flex justify-center items-center">
+<div class="mt-24 flex justify-center items-center">
     <button on:click={togglePaintings}
-            class="absolute z-40 mt-64 cursor-pointer group focus:outline-none">
+            class="cursor-pointer group focus:outline-none">
         <div class="uppercase tracking-wider font-semibold  text-xl text-gray-50 group-hover:text-gray-200">
             {#if preview}
                 <span>Show All</span>
