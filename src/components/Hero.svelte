@@ -40,7 +40,7 @@
 			/>
 		{/each}
 	</div>
-	<div class="mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0 h-full">
+	<div class="mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0">
 		<div class="flex justify-center">
 			<div>
 				<h1 class="uppercase text-9xl font-black text-center tracking-tight">Jakub Kępka</h1>
