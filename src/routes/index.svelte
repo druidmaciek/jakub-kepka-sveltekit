@@ -52,12 +52,18 @@
 <Hero/>
 
 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    
     <Nav/>
-    <Grid {paintings}>
-    </Grid>
+
+    <Grid {paintings}/>
+
+
     <About/>
+
     <List {photoshoots}/>
+
     <Contact/>
+
 </div>
 
 

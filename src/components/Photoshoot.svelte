@@ -21,9 +21,9 @@
 <div class="sm:flex sm:items-start mt-24 sm:mt-48 px-4 sm:px-0">
   
   <div class="{ left ? 'order-1' : 'order-2'} w-full sm:w-3/5 pl-0 sm:px-12 text-gray-50 text-center sm:text-left">
-    <h2 on:click={handleClick} class="mt-4 text-3xl uppercase font-semibold font-title tracking-wider cursor-pointer">{photoshoot.content.name_eng}</h2>
+    <h2 on:click={handleClick} class="mt-4 text-5xl smtext-3xl uppercase font-semibold font-title tracking-wider cursor-pointer">{photoshoot.content.name_eng}</h2>
       <div class="hidden sm:block mt-2 prose font-normal">{@html md.render(photoshoot.content.desc_eng)}</div>
-      <button on:click={handleClick} class="mb-6 sm:mb-0 mt-6 text-2xl font-semibold tracking-wider hover:underline">See Session
+      <button on:click={handleClick} class="mb-6 sm:mb-0 mt-6 text-xl font-semibold tracking-wider hover:underline">See Session
       </button>
   </div>
  
