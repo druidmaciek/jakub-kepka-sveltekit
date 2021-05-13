@@ -1,7 +1,7 @@
 <script>
     let year = new Date().getFullYear();
 </script>
-<div id="nav" class="py-2 px-4 flex justify-between items-center text-gray-50 uppercase">
+<div id="nav" class="mt-24 py-2 px-4 flex justify-between items-center text-gray-50 uppercase">
     
     <a href="#hero">© {year} Jakub Kępka</a>
 

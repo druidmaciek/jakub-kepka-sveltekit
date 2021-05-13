@@ -1,8 +1,8 @@
 
 
-<div id="contact" class="px-24 my-12 sm:my-48 text-gray-50">
-    <div class="px-4 sm:px-12 sm:text-center">
-        <h2 class="mt-4 text-5xl uppercase font-semibold font-title ">Kontakt</h2>
+<div id="contact" class="text-gray-50 mt-24 px-4">
+    <div class="sm:text-center">
+        <h2 class="text-5xl uppercase font-semibold font-title ">Kontakt</h2>
         <div class="mt-2 mb-4 hover:text-gray-300 tracking-wider">
             <ul>
                 <li>
