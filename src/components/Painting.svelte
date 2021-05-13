@@ -2,6 +2,7 @@
     import { createEventDispatcher } from 'svelte';
     import { fly } from 'svelte/transition';
     export let painting;
+    export let isPL;
 
     const dispatch = createEventDispatcher();
     function handleClick() {
@@ -18,7 +19,7 @@
     alt={painting.content.image.alt}>
     
     <div class="px-4 pt-8 font-semibold opacity-0 group-hover:opacity-100" >
-        <p class="text-gray-50 font-title text-3xl">{ painting.content.Title_ENG }</p>
-        <!-- <p class="text-2xl">{ painting.content.Title_ENG }</p> -->
+        <p class="text-gray-50 font-title text-3xl">{#if isPL }{painting.content.Title_PL}{:else}{ painting.content.Title_ENG }{/if}</p>
+        
     </div>
 </div>

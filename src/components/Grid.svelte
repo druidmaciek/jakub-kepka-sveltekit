@@ -6,6 +6,7 @@
     
 	export let paintings;
     export let preview = true;
+    export let isPL;
     
     let selectedPainting;
     let showModal = false;
@@ -33,18 +34,18 @@
 </script>
 
 {#if showModal}
-<Modal on:hidePainting={closePaintingModal} painting={selectedPainting}/>
+<Modal on:hidePainting={closePaintingModal} painting={selectedPainting} {isPL}/>
 {/if}
 <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
 	{#each paintings as painting, i}
         
             {#if i < 6}
-                <Painting on:showPainting={showPaintingModal} {painting} />
+                <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
             
             {:else}
                 {#if !preview}
                     
-                    <Painting on:showPainting={showPaintingModal} {painting} />
+                    <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
                 {/if}
             {/if}
 	{/each}

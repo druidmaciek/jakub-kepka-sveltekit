@@ -2,9 +2,11 @@
 	import { fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
     import { Remarkable } from 'remarkable';
-    
+    import { _ } from "svelte-i18n";
+
 	let md = new Remarkable({linkTarget: "_blank"});
 	export let painting;
+    export let isPL;
 
 	const dispatch = createEventDispatcher();
 
@@ -42,7 +44,7 @@
                               d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
                               clip-rule="evenodd"/>
                     </svg>
-                    <span x-show="eng" class="ml-2 font-semibold uppercase text-gray-50">Back</span>
+                    <span x-show="eng" class="ml-2 font-semibold uppercase text-gray-50">{$_('modal.back')}</span>
                 </button>
                 <button  on:click={closeModal}  class="focus:outline-none">
                     <svg class="h-6 w-6 text-gray-50" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -59,8 +61,8 @@
                      class="w-full object-contain" src={painting.content.image.filename}
                      alt="">
                 <div  class="text-gray-50 text-cente mt-6">
-                    <h2 class="text-4xl  font-title font-black mb-2">{painting.content.Title_ENG}</h2>
-                    <p>{@html md.render(painting.content.Description_ENG)}</p>
+                    <h2 class="text-4xl  font-title font-black mb-2">{#if isPL} {painting.content.Title_PL }{:else} {painting.content.Title_ENG} {/if}</h2>
+                    <p>{#if isPL} {@html md.render(painting.content.Description_PL)} {:else} {@html md.render(painting.content.Description_ENG)} {/if}</p>
                 </div>
             </div>
         </div>

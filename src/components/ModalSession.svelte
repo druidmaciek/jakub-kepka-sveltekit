@@ -2,9 +2,11 @@
 	import { fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
     import { Remarkable } from 'remarkable';
+    import { _ } from "svelte-i18n";
     
 	let md = new Remarkable({linkTarget: "_blank"});
 	export let photoshoot;
+    export let isPL;
 
 	const dispatch = createEventDispatcher();
 
@@ -55,7 +57,7 @@
                               d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
                               clip-rule="evenodd"/>
                     </svg>
-                    <span class="ml-2 font-semibold uppercase text-gray-50">Back</span>
+                    <span class="ml-2 font-semibold uppercase text-gray-50">{$_('modal.back')}</span>
                 </button>
                 <button  on:click={closeModal}  class="focus:outline-none">
                     <svg class="h-6 w-6 text-gray-50" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -105,8 +107,8 @@
 
                 </div>
                 <div class="text-white mt-6">
-                    <h2 class="text-3xl font-bold mb-2">{ photoshoot.content.name_eng}</h2>
-                    <div>{@html md.render(photoshoot.content.desc_eng)}</div>
+                    <h2 class="text-3xl font-bold mb-2">{#if isPL}{ photoshoot.content.name_pl}{:else}{photoshoot.content.name_eng}{/if}</h2>
+                    <div>{#if isPL}{@html md.render(photoshoot.content.desc_eng)}{:else}{@html md.render(photoshoot.content.desg_pl)}{/if}</div>
                 </div>
                 
             </div>

@@ -1,4 +1,8 @@
 <script>
+	import {
+		_
+	}
+	from 'svelte-i18n';
 	import { fade } from 'svelte/transition';
     function shuffle(array) {
     return array.sort(function(){ 
@@ -46,7 +50,7 @@
 				<h1 class="uppercase cursor-default text-9xl font-black text-center tracking-tight">Jakub Kępka</h1>
 				<div class="mt-4 text-center">
 					<a href="#nav" class="group outline-none">
-						<p class="uppercase font-semibold text-3xl group-hover:text-gray-200">Skip</p>
+						<p class="uppercase font-semibold text-3xl group-hover:text-gray-200">{$_('hero.button')}</p>
 						<div class="flex justify-center">
 							<svg
 								class="h-6 w-6 text-gray-50 group-hover:text-gray-200"

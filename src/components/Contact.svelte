@@ -1,8 +1,13 @@
-
+<script>
+    import {
+		_
+	}
+	from 'svelte-i18n';
+</script>
 
 <div id="contact" class="text-gray-50 mt-24 px-4">
     <div class="sm:text-center">
-        <h2 class="text-5xl uppercase font-semibold font-title ">Kontakt</h2>
+        <h2 class="text-5xl uppercase font-semibold font-title ">{$_('nav.contact')}</h2>
         <div class="mt-2 mb-4 hover:text-gray-300 tracking-wider">
             <ul>
                 <li>

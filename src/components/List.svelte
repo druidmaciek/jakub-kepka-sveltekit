@@ -5,6 +5,7 @@
 
     let selectedPhotoshoot;
     let showModal = false;
+    export let isPL;
 
     function showPhotoshootModal(event) {
         console.log(event.detail)
@@ -21,13 +22,13 @@
 
 
 {#if showModal}
-<Modal on:hidePhotoshoot={closePhotoshootModal} photoshoot={selectedPhotoshoot}/>
+<Modal on:hidePhotoshoot={closePhotoshootModal} photoshoot={selectedPhotoshoot} {isPL}/>
 {/if}
 
 <div id="photos" class="mt-48">
 
     {#each photoshoots as photoshoot, i}
-        <Photoshoot on:showPhotoshoot={showPhotoshootModal} {photoshoot} left={i % 2 == 0}/>
+        <Photoshoot on:showPhotoshoot={showPhotoshootModal} {photoshoot} left={i % 2 == 0} {isPL}/>
     {/each}
 
 </div>
