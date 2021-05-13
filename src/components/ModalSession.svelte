@@ -67,7 +67,7 @@
 
             <!-- Painting and Info -->
             <div class="mt-4">
-                <div class="block sm:hidden overflow-x-auto flex items-center justify-between">
+                <div class="block overflow-x-auto flex items-center justify-between">
                     {#each gallery as image}
                     
                         <img style="max-height: 500px;"
@@ -78,7 +78,7 @@
                     
                     {/each}
                 </div>
-                <div class="hidden sm:block sm:flex items-center">
+                <div class="hidden">
                     <button on:click={previousImage}
                             type="button">
                         <svg class="text-white hover:text-gray-500 h-6 w-6" xmlns="http://www.w3.org/2000/svg"
