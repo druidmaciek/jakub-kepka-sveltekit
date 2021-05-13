@@ -1,6 +1,6 @@
 <script>
     import { createEventDispatcher } from 'svelte';
-    import { fly, scale } from 'svelte/transition';
+    import { fly } from 'svelte/transition';
     export let painting;
 
     const dispatch = createEventDispatcher();

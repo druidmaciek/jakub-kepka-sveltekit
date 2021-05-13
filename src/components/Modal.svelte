@@ -66,35 +66,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-<div transition:fade on:click={closeModal}
-	class="hidden z-50 flex items-center justify-center fixed left-0 bottom-0 w-full h-full bg-black "
->
-	<div class="mt-16 max-w-4xl mx-auto">
-        <div class="flex justify-between items-center text-gray-50">
-            <button on:click={closeModal}>X</button>
-            <button on:click={closeModal}>X</button>
-        </div>
-		<img
-			
-			width="640"
-			height="360"
-			class="w-full max-h-[600px] object-contain"
-			src={painting.content.image.filename}
-			alt={painting.content.image.alt}
-		/>
-        <div class="text-gray-50 mt-6">
-            <h2 class="text-3xl font-bold mb-2">{painting.content.Title_ENG}</h2>
-            <p x-html="md.render(painting.content.Description_ENG)">{painting.content.Description_ENG}</p>
-        </div>
-	</div>
-</div>
