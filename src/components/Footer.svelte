@@ -5,7 +5,7 @@
     
     <a href="#hero">© {year} Jakub Kępka</a>
 
-    <div class="flex justify-start space-x-8 font-semibold">
+    <div class="hidden sm:block flex justify-start space-x-8 font-semibold">
         <a href="#about">About</a>
         <a href="#photos">Photoshoots</a>
         <a href="#nav">Paintings</a>
