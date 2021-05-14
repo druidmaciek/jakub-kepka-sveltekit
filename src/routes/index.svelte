@@ -9,8 +9,8 @@
 		//const res = await fetch(url);
 
 		
-		const res = await client.get('cdn/stories/?starts_with=paintings/&sort_by=first_published_at:asc');
-		const res2 = await client.get('cdn/stories/?starts_with=sesje/&sort_by=first_published_at:asc');
+		const res = await client.get('cdn/stories/?starts_with=paintings/');
+		const res2 = await client.get('cdn/stories/?starts_with=sesje/');
 		const res3 = await client.get('cdn/stories/bio');
 		//console.log(res.data.story);
 
