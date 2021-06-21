@@ -85,7 +85,7 @@
 				<a class="p-1 " href="#contact">{$_('nav.contact')}</a>
 			</div>
 			<div>
-				<button on:click={langSwitch} class="p-1 ">
+				<button on:click={langSwitch} class="p-1 focus:outline-none">
 					<span class="w-8 inline-block group-hover:hidden">
 						{#if isPL}PL{:else}ENG{/if}</span
 					>
