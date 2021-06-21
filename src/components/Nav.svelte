@@ -38,7 +38,7 @@
 
 		<button
 			on:click={langSwitch}
-			class="cursor-pointer p-1 hidden sm:block group focus:outline-none focus:border-2 focus:rounded focus:border-whitu"
+			class="cursor-pointer p-1 hidden sm:block group focus:outline-none"
 		>
 			<span class="w-8 inline-block group-hover:hidden">
 				{#if isPL}PL{:else}ENG{/if}</span
@@ -48,10 +48,10 @@
 			</span>
 		</button>
 
-		<button on:click={handleClick} class="block sm:hidden p-1 bg-gray-50 hover:bg-gray-300 rounded">
+		<button on:click={handleClick} class="block sm:hidden p-1 rounded">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="text-gray-900 h-5 w-5"
+				class="text-gray-50 h-5 w-5"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"
