@@ -119,7 +119,7 @@
                 </div>
                 <div class="text-white mt-6">
                     <h2 class="text-3xl font-bold mb-2">{#if isPL}{ photoshoot.content.name_pl}{:else}{photoshoot.content.name_eng}{/if}</h2>
-                    <div>{#if isPL}{@html md.render(photoshoot.content.desc_eng)}{:else}{@html md.render(photoshoot.content.desg_pl)}{/if}</div>
+                    <div class="prose font-normal">{#if isPL}{@html md.render(photoshoot.content.desc_pl)}{:else}{@html md.render(photoshoot.content.desc_eng)}{/if}</div>
                 </div>
                 
             </div>
