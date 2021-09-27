@@ -36,19 +36,40 @@
 {#if showModal}
 <Modal on:hidePainting={closePaintingModal} painting={selectedPainting} {isPL}/>
 {/if}
-<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
-	{#each paintings as painting, i}
-        
-            {#if i < 6}
-                <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
+<div class="hidden sm:block">
+    <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
+        {#each paintings as painting, i}
             
-            {:else}
-                {#if !preview}
-                    
+                {#if i < 6}
                     <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
+                
+                {:else}
+                    {#if !preview}
+                        
+                        <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
+                    {/if}
                 {/if}
-            {/if}
-	{/each}
+        {/each}
+    </div>
+    
+</div>
+
+<div class="block sm:hidden">
+    <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
+        {#each paintings as painting, i}
+            
+                {#if i < 3}
+                    <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
+                
+                {:else}
+                    {#if !preview}
+                        
+                        <Painting on:showPainting={showPaintingModal} {painting} {isPL}/>
+                    {/if}
+                {/if}
+        {/each}
+    </div>
+    
 </div>
 
 <div>
