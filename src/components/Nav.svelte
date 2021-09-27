@@ -87,10 +87,10 @@
 			<div>
 				<button on:click={langSwitch} class="p-1 focus:outline-none">
 					<span class="w-8 inline-block group-hover:hidden">
-						{#if isPL}PL{:else}ENG{/if}</span
+						{#if isPL}PL{:else}PL{/if}</span
 					>
 					<span class="w-8 hidden group-hover:inline-block">
-						{#if isPL}ENG{:else}PL{/if}
+						{#if isPL}ENG{:else}ENG{/if}
 					</span>
 				</button>
 			</div>
