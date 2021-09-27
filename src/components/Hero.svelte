@@ -15,8 +15,6 @@
 		'https://img2.storyblok.com/f/105186/1080x1080/65ba114caa/106256589_145117863876877_2643895214070327709_n.jpg',
         'https://img2.storyblok.com/800x0/filters:quality(90),format(png)/f/105186/6000x4000/3023bef980/dscf0080.jpg',
         'https://img2.storyblok.com/800x0/filters:quality(90),format(png)/f/105186/5297x3889/6a7cc33d3b/dscf0190.jpg',
-        'https://img2.storyblok.com/800x0/filters:quality(90),format(png)/f/105186/1500x1000/0b5f66737e/grzegorz_pastuszak-2354.jpg',
-        'https://img2.storyblok.com/800x0/filters:quality(90),format(png)/f/105186/1500x1000/968ff5b5eb/grzegorz_pastuszak-2366.jpg'
 	]);
 
     
