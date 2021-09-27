@@ -86,7 +86,7 @@
                         <img style="max-height: 500px;"
                              width="640" height="360"
                          class="w-full object-contain"
-                         src={image.filename.replace('//a.storyblok.com', '//img2.storyblok.com/500x0/filters:quality(90),format(png)')}
+                         src={image.filename.replace('//a.storyblok.com', '//img2.storyblok.com/500x0/filters:quality(95),format(png)')}
                          alt="">
                     
                     {/each}
@@ -104,7 +104,7 @@
                     <img style="max-height: 500px;"
                          width="640" height="360"
                          class="w-full object-contain"
-                         src="{gallery[activeImage].filename.replace('//a.storyblok.com', '//img2.storyblok.com/800x0/filters:quality(90),format(png)')}"
+                         src="{gallery[activeImage].filename.replace('//a.storyblok.com', '//img2.storyblok.com/800x0/filters:quality(95),format(png)')}"
                          alt="">
                     <button on:click={nextImage}
                             type="button">
