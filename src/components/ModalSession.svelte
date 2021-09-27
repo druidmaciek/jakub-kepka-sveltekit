@@ -29,6 +29,17 @@
 </script>
 
 
+<style>
+    html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    
+</style>
 
 
 <div transition:fade="{{duration: 250 }}" class="fixed z-50 inset-0 overflow-y-auto">
