@@ -58,7 +58,7 @@
             <div class="mt-4">
                 <img style="max-height: 500px;"
                      width="640" height="360"
-                     class="w-full object-contain" src={painting.content.image.filename}
+                     class="w-full object-contain" src={painting.content.image.filename.replace('//a.storyblok.com', '//img2.storyblok.com/800x0/filters:quality(95),format(png)')}
                      alt="">
                 <div  class="text-gray-50 text-cente mt-6">
                     <h2 class="text-4xl  font-title font-black mb-2">{#if isPL} {painting.content.Title_PL }{:else} {painting.content.Title_ENG} {/if}</h2>
