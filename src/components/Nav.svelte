@@ -68,7 +68,7 @@
 </div>
 
 {#if showMobileMenu}
-	<div class="relative">
+	<div x-cloak class="relative">
 		<div
 			class="text-gray-50 text-right absolute z-50 right-0 bg-black px-2 space-y-2 pb-2 shadow-lg"
 		>

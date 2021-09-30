@@ -18,7 +18,7 @@
 
 
 
-<div transition:fade="{{duration: 250 }}" class="fixed z-50 inset-0 overflow-y-auto">
+<div x-cloak transition:fade="{{duration: 250 }}" class="fixed z-50 inset-0 overflow-y-auto">
     <div
          class="flex items-end justify-center min-h-screen px-4 pb-20 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
