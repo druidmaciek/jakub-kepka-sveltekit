@@ -15,7 +15,7 @@
     transition:fly="{{ y: 200, duration: 1000 }}" 
      class="group aspect-w-10 aspect-h-12 cursor-pointer">
     <img  class="rounded-sm border border-gray-900 object-cover object-top sm:object-center lg:h-full lg:w-full group-hover:opacity-25" 
-    src={painting.content.image.filename.replace('//a.storyblok.com', '//img2.storyblok.com/450x0/filters:format(png)') }
+    src={painting.content.image.filename.replace('//a.storyblok.com', '//img2.storyblok.com/500x0/filters:format(png)') }
     alt={painting.content.image.alt}>
     
     <div class="px-4 pt-8 font-semibold opacity-0 group-hover:opacity-100" >
