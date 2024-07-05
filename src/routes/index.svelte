@@ -114,6 +114,27 @@
 
 <Hero />
 
+<div class="flex justify-center items-center min-h-screen">
+
+	<div class="flex flex-col md:flex-row justify-center items-center bg-black border-4 border-[#FF0000] p-4 text-center max-w-2xl text-white">
+        <div class="w-full md:w-1/2 mb-4 md:mb-0">
+            <img src="abgrund.JPG" alt="Event Image" class="w-full h-auto border-b-4 border-black mb-4 md:mb-0">
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
+            <h2 class="text-2xl font-bold mb-2">ABGRUND POKAZ 17.07 21:00</h2>
+            <p class="text-lg mb-4">Na żywo będzie grał Lung artysta z Londynu, który zrobi performance muzyczno-artystyczny w tle do przejścia modeli</p>
+            <div class="w-full flex justify-center">
+                <a href="https://buy.stripe.com/14k7sT1uH4IIcIEdQQ" class="block bg-black text-white font-bold py-2 px-4 border-4 border-black hover:bg-red-600">
+                    Kup Wejściówke
+				</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 	<Nav on:changeLang={switchLang} {isPL} />
 
