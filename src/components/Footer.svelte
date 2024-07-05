@@ -16,7 +16,7 @@
     </div>
 
     <div>
-        <a href="https://janowski.dev">{$_('footer.by')}: Janowski.dev</a>
+        <a href="https://bitgeese.io">{$_('footer.by')}: BitGeese.io</a>
     </div>
 
 </div>

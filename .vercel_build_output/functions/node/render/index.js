@@ -18447,7 +18447,7 @@ var Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <a href="${"#photos"}">${escape3($_("nav.photoshoots"))}</a>
         <a href="${"#nav"}">${escape3($_("nav.paintings"))}</a></div>
 
-    <div><a href="${"https://janowski.dev"}">${escape3($_("footer.by"))}: Janowski.dev</a></div></div>`;
+    <div><a href="${"https://bitgeese.io"}">${escape3($_("footer.by"))}: BitGeese.IO</a></div></div>`;
 });
 var _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${slots.default ? slots.default({}) : ``}
