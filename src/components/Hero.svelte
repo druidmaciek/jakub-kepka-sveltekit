@@ -31,7 +31,7 @@
 </script>
 
 <div id="hero" class="relative mb-24 text-gray-50 font-title max-h-screen">
-	<div transition:fade class="h-screen relative" id="hero-image">
+	<!-- <div transition:fade class="h-screen relative" id="hero-image">
 		{#each images as image, i}
 			<img style="opacity:0"
 				class="{current === i
@@ -41,6 +41,13 @@
 				alt=""
 			/>
 		{/each}
+	</div> -->
+	<div class="h-screen relative" id="hero-image">
+			<img 
+				class="opacity-25 absolute h-screen w-full object-scale-down"
+				src="/poster.JPG"
+				alt=""
+			/>
 	</div>
 	<div class="mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0">
 		<div class="flex justify-center">
