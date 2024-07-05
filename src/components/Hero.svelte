@@ -44,12 +44,12 @@
 	</div> -->
 	<div class="h-screen relative" id="hero-image">
 			<img 
-				class="opacity-25 absolute h-screen w-full object-scale-down"
+				class="opacity-100 absolute h-screen w-full object-scale-down"
 				src="/poster.JPG"
 				alt=""
 			/>
 	</div>
-	<div class="mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0">
+	<div class="hidden mt-[35%] sm:mt-[30%] lg:mt-[25%] absolute inset-0">
 		<div class="flex justify-center">
 			<div>
 				<h1 class="uppercase cursor-default text-9xl font-black text-center tracking-tight">Jakub Kępka</h1>

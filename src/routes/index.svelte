@@ -112,13 +112,13 @@
 
 </script>
 
-<Hero />
+<!-- <Hero /> -->
 
 <div class="flex justify-center items-center min-h-screen">
 
 	<div class="flex flex-col md:flex-row justify-center items-center bg-black border-4 border-[#FF0000] p-4 text-center max-w-2xl text-white">
         <div class="w-full md:w-1/2 mb-4 md:mb-0">
-            <img src="abgrund.JPG" alt="Event Image" class="w-full h-auto border-b-4 border-black mb-4 md:mb-0">
+            <img src="poster.JPG" alt="Event Image" class="w-full h-auto border-b-4 border-black mb-4 md:mb-0">
         </div>
         <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
             <h2 class="text-2xl font-bold mb-2">ABGRUND POKAZ 17.07 21:00</h2>
