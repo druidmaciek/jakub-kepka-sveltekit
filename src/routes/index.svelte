@@ -112,9 +112,11 @@
 
 </script>
 
-<!-- <Hero /> -->
+<Hero />
 
-<div class="flex justify-center items-center min-h-screen">
+
+<!-- Event Banner -->
+<!-- <div class="flex justify-center items-center min-h-screen">
 
 	<div class="flex flex-col md:flex-row justify-center items-center bg-black border-4 border-[#FF0000] p-4 text-center max-w-xl text-white">
         <div class="w-full md:w-1/2 mb-4 md:mb-0">
@@ -130,7 +132,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
